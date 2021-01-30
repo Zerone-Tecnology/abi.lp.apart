@@ -1,0 +1,89 @@
+$accent: #EE3E18
+$accent2: #56463E
+$text: #56463E
+
+body
+  color: $text
+  font-size: 16px
+  line-height: 1em
+  font-family: 'Inter', sans-serif
+  margin: 0
+  padding: 0
+a
+  color: $text
+  text-decoration: none
+ul
+  margin: 0
+  padding: 0
+  list-style-type: none
+.btn
+  display: inline-block
+  padding: 15px
+  border-radius: 4px
+  &-orange
+    background-color: $accent
+    color: #ffffff
+.header
+  background-image: url('../img/header_bg.jpg')
+  background-repeat: no-repeat
+  background-size: cover
+  &_top-wrap
+    .menu-wrap
+      li
+        display: inline-block
+        padding: 30px 15px 20px
+        &.active
+          border-bottom: 2px solid $accent2
+    .phone-wrap
+      text-align: right
+      .phone
+        padding: 30px 0
+        display: inline-block
+      li
+        padding: 0 25px
+        position: relative
+        display: inline-block
+        &::after, &::before
+          content: ''
+          width: 15px
+          height: 25px
+          position: absolute
+          top: 5px
+          background-repeat: no-repeat
+          background-size: contain
+        &::before
+          background-image: url('../img/phone_icon.png')
+          left: 0
+        &.first::after
+          background-image: url('../img/arr_icon.png')
+          right: 0
+      .whatsapp
+        &::before
+          background-image: url('../img/whatsapp_icon.png')
+          left: 0
+      li
+        &:hover
+          ul
+            display: block
+        a
+          color: $accent
+        ul
+          // display: none
+          text-align: right
+          padding: 15px 0
+          position: absolute
+          background-color: #fff
+          li
+            display: block
+            padding: 0 0 15px 25px
+  .content-wrap
+    background-color: #fff
+    padding: 55px 45px
+    margin: 55px
+    border-left: 3px solid $accent2
+    .title
+      font-weight: 700
+      font-size: 30px
+      line-height: 32px
+    p
+      margin: 35px 0
