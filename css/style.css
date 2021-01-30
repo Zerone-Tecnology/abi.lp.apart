@@ -46,6 +46,7 @@ ul {
 
 .header_top-wrap .phone-wrap {
   text-align: right;
+  padding: 0 25px;
 }
 
 .header_top-wrap .phone-wrap .phone {
@@ -54,9 +55,9 @@ ul {
 }
 
 .header_top-wrap .phone-wrap li {
-  padding: 0 25px;
   position: relative;
-  display: inline-block;
+  display: block;
+  padding: 0 25px;
 }
 
 .header_top-wrap .phone-wrap li::after, .header_top-wrap .phone-wrap li::before {
@@ -74,14 +75,13 @@ ul {
   left: 0;
 }
 
+.header_top-wrap .phone-wrap li.first {
+  padding-bottom: 5px;
+}
+
 .header_top-wrap .phone-wrap li.first::after {
   background-image: url("../img/arr_icon.png");
   right: 0;
-}
-
-.header_top-wrap .phone-wrap .whatsapp::before {
-  background-image: url("../img/whatsapp_icon.png");
-  left: 0;
 }
 
 .header_top-wrap .phone-wrap li:hover ul {
@@ -93,15 +93,23 @@ ul {
 }
 
 .header_top-wrap .phone-wrap li ul {
+  display: none;
   text-align: right;
-  padding: 15px 0;
+  padding: 10px 25px;
   position: absolute;
+  right: 0;
+  top: 100%;
   background-color: #fff;
+  width: 210px;
 }
 
 .header_top-wrap .phone-wrap li ul li {
-  display: block;
-  padding: 0 0 15px 25px;
+  padding: 10px 0 5px;
+}
+
+.header_top-wrap .phone-wrap .whatsapp::before {
+  background-image: url("../img/whatsapp_icon.png");
+  left: 0;
 }
 
 .header .content-wrap {
