@@ -1,14 +1,32 @@
 $accent: #EE3E18
 $accent2: #56463E
+$accent3: #F7F6F5
 $text: #56463E
 
 body
   color: $text
   font-size: 16px
-  line-height: 1em
+  line-height: 1.4em
   font-family: 'Inter', sans-serif
   margin: 0
   padding: 0
+
+/* Works on Firefox */
+* 
+  scrollbar-width: thin
+  scrollbar-color: $accent2 $accent
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar 
+  width: 5px
+
+*::-webkit-scrollbar-track 
+  background: $accent3
+
+*::-webkit-scrollbar-thumb 
+  background-color: $accent2
+  border-radius: 20px  
+  
 a
   color: $text
   text-decoration: none
@@ -18,16 +36,34 @@ ul
   list-style-type: none
 .btn
   display: inline-block
-  padding: 15px
+  padding: 15px 50px
   border-radius: 4px
+  &:hover
+    background-color: lighten(#ccc, 5%)
   &-orange
     background-color: $accent
     color: #ffffff
+    &:hover
+      background-color: lighten($accent, 5%)
+  &-arr
+    &::after
+      content: ''
+      width: 25px
+      height: 15px
+      margin-left: 15px
+      display: inline-block
+      background-image: url('../img/sprite_main.png')
+      background-position: -50px -52px
+    &:hover
+      color: $accent
+      background-color: transparent
 .header
   background-image: url('../img/header_bg.jpg')
   background-repeat: no-repeat
   background-size: cover
+  min-height: 750px
   &_top-wrap
+    margin: 22px 0
     .menu-wrap
       li
         display: inline-block
@@ -38,7 +74,7 @@ ul
       text-align: right
       padding: 0 25px
       .phone
-        padding: 30px 0
+        padding: 25px 0
         display: inline-block
       li
         position: relative
@@ -46,44 +82,53 @@ ul
         padding: 0 25px
         &::after, &::before
           content: ''
-          width: 15px
+          width: 25px
           height: 25px
           position: absolute
-          top: 5px
+          top: 0
           background-repeat: no-repeat
-          background-size: contain
+          background-image: url('../img/sprite_main.png')
+        &::after
+          opacity: 0  
         &::before
-          background-image: url('../img/phone_icon.png')
           left: 0
+          background-position: -50px 0
         &.first
-          padding-bottom: 5px
+          padding-bottom: 10px
           &::after
-            background-image: url('../img/arr_icon.png')
             right: 0
+            opacity: 1
+            background-position: -80px 0
         &:hover
           ul
             display: block
         a
           color: $accent
+          padding: 0 10px
         ul
           display: none
           text-align: right
-          padding: 10px 25px
+          padding: 0 25px 10px
           position: absolute
           right: 0
           top: 100%
           background-color: #fff
-          width: 210px
+          width: 230px
+          border-bottom-right-radius: 2px
+          border-bottom-left-radius: 2px
           li
             padding: 10px 0 5px
+            &::before
+              top: 5px
       .whatsapp
         &::before
-          background-image: url('../img/whatsapp_icon.png')
+          background-position: -50px -25px
           left: 0
+          top: 5px
   .content-wrap
     background-color: #fff
     padding: 55px 45px
-    margin: 55px
+    margin: 100px 0
     border-left: 3px solid $accent2
     .title
       font-weight: 700
@@ -91,3 +136,176 @@ ul
       line-height: 32px
     p
       margin: 35px 0
+.block_wrap
+  padding: 55px 0
+  .title
+    font-size: 24px
+    font-weight: 700
+    text-transform: uppercase
+    text-align: center
+  &.s1
+    border-radius: 2px
+    background-color: #ffffff
+    padding: 55px 0
+    top: -55px
+    position: relative
+    margin-bottom: 75px
+    .block_s1_wrap
+      top: -150px
+      position: absolute
+      background-color: #fff
+      width: 100%
+      padding: 55px 85px
+      border-radius: 2px
+      box-shadow: 0px 2px 9px rgba(86, 70, 62, 0.16)
+      .title
+        padding: 0 0 25px
+        display: block
+      .block_content
+        .icon
+          background-image: url('../img/sprite_main.png')
+          background-repeat: no-repeat
+          width: 50px
+          height: 50px
+          display: block
+          float: left
+          margin-right: 15px
+          &.b1
+            background-position: 0 0
+          &.b2
+            background-position: 0 -50px
+          &.b3
+            background-position: 0 -100px
+  &.s2
+    padding: 75px 0
+    .content-wrap
+      padding: 75px 0
+      .title
+        text-align: left
+        margin-bottom: 45px
+      p
+        margin-bottom: 70px
+  &.s3
+    .title
+      margin-bottom: 55px
+    .block
+      text-align: center
+      .icon
+        background-image: url('../img/sprite_main.png')
+        background-repeat: no-repeat
+        width: 100px
+        height: 100px
+        display: block
+        margin: 0 auto
+      h4
+        text-transform: uppercase
+      &.b1 .icon
+        background-position: -140px 0
+      &.b2 .icon
+        background-position: -240px 0
+      &.b3 .icon
+        background-position: -240px 0
+      &.b4 .icon
+        background-position: -140px -100px
+      &.b5 .icon
+        background-position: -240px -100px
+      &.b6 .icon
+        background-position: -340px -100px
+      &.b7 .icon
+        background-position: -140px -200px
+      &.b8 .icon
+        background-position: -240px -200px
+  &.s4
+    .tabs_wrap
+      display:flex
+      flex-direction: column
+      align-items: center
+      margin-top: 55px
+      text-align: center
+      .tab
+        cursor: pointer
+        padding: 20px 90px
+        background: $accent3
+        display: inline-block
+        color: $text
+        margin-bottom: 45px
+      #one-tab
+        border-radius: 2px 0 0 2px
+      #two-tab
+        border-radius: 0 2px 2px 0
+      .panels
+        background: #fffffff6
+        width: 100%
+        border-radius: 3px
+        overflow: hidden
+        padding: 20px
+      .panel
+        display: none
+        animation: fadein .8s
+      @keyframes fadein 
+        from 
+          opacity: 0    
+        to 
+          opacity: 1
+      .panel-title
+        font-size: 1.5em
+        font-weight: bold
+      .radio
+        display: none
+      #one:checked ~ .panels #one-panel,
+      #two:checked ~ .panels #two-panel
+        display: block
+      #one:checked ~ .tabs #one-tab,
+      #two:checked ~ .tabs #two-tab
+        background: $accent2
+        color: #fff
+        box-shadow: 0px 4px 12px rgba(86, 70, 62, 0.28)
+    .block-wrap
+      text-align: left
+      box-shadow: 0px 2px 9px rgba(86, 70, 62, 0.16)
+      border-radius: 2px
+      .img-wrap
+        background-size: cover
+        background-repeat: no-repeat
+        text-align: left
+        padding: 95px 0 0
+        border-top-left-radius: 2px
+        border-top-right-radius: 2px
+        .text-wrap
+          background-color: #fff
+          padding: 25px 45px
+          border-left: 2px solid $accent2
+          display: inline-block
+        .title_2
+          text-transform: uppercase
+          font-weight: 700
+        p
+          margin-bottom: 0
+      .content-wrap
+        padding: 25px 45px 20px
+        height: 455px
+        overflow: auto
+      .btn-orange
+        background-color: $accent3
+        color: $text
+        width: 100%
+        text-align: center
+        border-top-left-radius: 0
+        border-top-right-radius: 0
+        &:hover
+          background-color: $accent
+          color: #fff
+      p.disable
+        color: rgba($accent2, .5)
+      &.b1 .img-wrap
+        background-image: url('../img/b4_pic-1.jpg')
+      &.b2 .img-wrap
+        background-image: url('../img/b4_pic-2.jpg')
+      &.b3 .img-wrap
+        background-image: url('../img/b4_pic-3.jpg')
+      &.b4 .img-wrap
+        background-image: url('../img/b4_pic-4.jpg')
+      &.b5 .img-wrap
+        background-image: url('../img/b4_pic-5.jpg')
+      &.b6 .img-wrap
+        background-image: url('../img/b4_pic-6.jpg')
