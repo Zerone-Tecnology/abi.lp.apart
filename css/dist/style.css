@@ -15,15 +15,15 @@ body {
 
 /* Works on Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
-  width: 5px;
+  width: 3px;
 }
 
 *::-webkit-scrollbar-track {
-  background: #F7F6F5;
+  background: rgba(86, 70, 62, 0.11);
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: #56463E;
+  background-color: rgba(86, 70, 62, 0.4);
   border-radius: 20px;
 }
 
