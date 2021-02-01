@@ -196,6 +196,7 @@ ul {
 
 .block_wrap .title {
   font-size: 24px;
+  line-height: 1.4em;
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
@@ -479,5 +480,54 @@ ul {
 
 .block_wrap.s4 .block-wrap.b6 .img-wrap {
   background-image: url("../img/b4_pic-6.jpg");
+}
+
+.block_wrap.s5 {
+  background-image: url("../img/kta_bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.block_wrap.s5 .content-wrap {
+  text-align: left;
+}
+
+.block_wrap.s5 .content-wrap .title {
+  text-align: left;
+  margin-bottom: 25px;
+}
+
+.block_wrap.s5 .content-wrap .btn {
+  margin-top: 25px;
+}
+
+.block_wrap.s5 .sale-wrap .block {
+  background-color: #eee;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.block_wrap.s5 .sale-wrap .b-hour {
+  display: inline-block;
+  width: 23%;
+  margin-left: 5px;
+  padding: 15px;
+}
+
+.block_wrap.s5 .sale-wrap .b-hour b {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.block_wrap.s5 .sale-wrap .b-hour p {
+  margin: 0;
+}
+
+.block_wrap.s5 .sale-wrap .b-text {
+  padding: 15px;
+}
+
+.block_wrap.s5 .sale-wrap .b-text-2 {
+  padding: 55px 0;
 }
 /*# sourceMappingURL=style.css.map */
