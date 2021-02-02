@@ -42,6 +42,8 @@ ul {
   display: inline-block;
   padding: 15px 50px;
   border-radius: 4px;
+  font-weight: 700;
+  text-transform: lowercase;
 }
 
 .btn:hover {
@@ -51,10 +53,12 @@ ul {
 .btn-orange {
   background-color: #EE3E18;
   color: #ffffff;
+  -webkit-box-shadow: 0px 9px 18px 3px rgba(238, 62, 24, 0.09);
+          box-shadow: 0px 9px 18px 3px rgba(238, 62, 24, 0.09);
 }
 
 .btn-orange:hover {
-  background-color: #f05230;
+  background-color: #f16648;
 }
 
 .btn-arr::after {
@@ -174,7 +178,7 @@ ul {
 }
 
 .header .content-wrap {
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.85);
   padding: 55px 45px;
   margin: 100px 0;
   border-left: 3px solid #56463E;
@@ -434,6 +438,11 @@ ul {
   margin-bottom: 0;
 }
 
+.block_wrap.s4 .block-wrap .btn-orange {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 .block_wrap.s4 .block-wrap .content-wrap {
   padding: 25px 45px 20px;
   height: 455px;
@@ -483,13 +492,16 @@ ul {
 }
 
 .block_wrap.s5 {
-  background-image: url("../img/kta_bg.jpg");
+  background-image: url("../img/kta_bg-1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  padding: 0;
 }
 
 .block_wrap.s5 .content-wrap {
   text-align: left;
+  background-color: #fff;
+  padding: 75px 0 75px 50px;
 }
 
 .block_wrap.s5 .content-wrap .title {
@@ -501,8 +513,12 @@ ul {
   margin-top: 25px;
 }
 
+.block_wrap.s5 .sale-wrap {
+  margin-top: 75px;
+}
+
 .block_wrap.s5 .sale-wrap .block {
-  background-color: #eee;
+  background-color: #fff;
   text-align: center;
   margin-bottom: 15px;
 }
@@ -511,7 +527,7 @@ ul {
   display: inline-block;
   width: 23%;
   margin-left: 5px;
-  padding: 15px;
+  padding: 45px 15px;
 }
 
 .block_wrap.s5 .sale-wrap .b-hour b {

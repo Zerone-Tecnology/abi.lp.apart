@@ -42,6 +42,8 @@ ul {
   display: inline-block;
   padding: 15px 50px;
   border-radius: 4px;
+  font-weight: 700;
+  text-transform: lowercase;
 }
 .btn:hover {
   background-color: #d9d9d9;
@@ -49,9 +51,10 @@ ul {
 .btn-orange {
   background-color: #EE3E18;
   color: #ffffff;
+  box-shadow: 0px 9px 18px 3px rgba(238, 62, 24, 0.09);
 }
 .btn-orange:hover {
-  background-color: #f05230;
+  background-color: #f16648;
 }
 .btn-arr::after {
   content: "";
@@ -151,7 +154,7 @@ ul {
   top: 5px;
 }
 .header .content-wrap {
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.85);
   padding: 55px 45px;
   margin: 100px 0;
   border-left: 3px solid #56463E;
@@ -170,6 +173,7 @@ ul {
 }
 .block_wrap .title {
   font-size: 24px;
+  line-height: 1.4em;
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
@@ -349,6 +353,9 @@ ul {
 .block_wrap.s4 .block-wrap .img-wrap p {
   margin-bottom: 0;
 }
+.block_wrap.s4 .block-wrap .btn-orange {
+  box-shadow: none;
+}
 .block_wrap.s4 .block-wrap .content-wrap {
   padding: 25px 45px 20px;
   height: 455px;
@@ -386,4 +393,49 @@ ul {
 }
 .block_wrap.s4 .block-wrap.b6 .img-wrap {
   background-image: url("../img/b4_pic-6.jpg");
+}
+.block_wrap.s5 {
+  background-image: url("../img/kta_bg-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 0;
+}
+.block_wrap.s5 .content-wrap {
+  text-align: left;
+  background-color: #fff;
+  padding: 75px 0 75px 50px;
+}
+.block_wrap.s5 .content-wrap .title {
+  text-align: left;
+  margin-bottom: 25px;
+}
+.block_wrap.s5 .content-wrap .btn {
+  margin-top: 25px;
+}
+.block_wrap.s5 .sale-wrap {
+  margin-top: 75px;
+}
+.block_wrap.s5 .sale-wrap .block {
+  background-color: #fff;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.block_wrap.s5 .sale-wrap .b-hour {
+  display: inline-block;
+  width: 23%;
+  margin-left: 5px;
+  padding: 45px 15px;
+}
+.block_wrap.s5 .sale-wrap .b-hour b {
+  font-size: 32px;
+  font-weight: 700;
+}
+.block_wrap.s5 .sale-wrap .b-hour p {
+  margin: 0;
+}
+.block_wrap.s5 .sale-wrap .b-text {
+  padding: 15px;
+}
+.block_wrap.s5 .sale-wrap .b-text-2 {
+  padding: 55px 0;
 }
