@@ -41,6 +41,8 @@ ul
     padding: 15px
     margin: 15px auto
     border: none
+    &::placeholder
+      color: rgba($text, .5)
   input[type="checkbox"]
     display: block
   .btn
@@ -449,54 +451,85 @@ ul
         background-image: url('../img/portfolio/4.jpg')
         background-size: cover  
       &.portfolio-5
-        background-image: url('../img/portfolio/5.jpg')
-        background-size: cover  
-      &.portfolio-6
-        background-image: url('../img/portfolio/6.jpg')
-        background-size: cover  
-      &.portfolio-7
         background-image: url('../img/portfolio/7.jpg')
         background-size: cover  
-      &.portfolio-8
+      &.portfolio-6
         background-image: url('../img/portfolio/8.jpg')
+        background-size: cover  
+      &.portfolio-7
+        background-image: url('../img/portfolio/5.jpg')
+        background-size: cover  
+      &.portfolio-8
+        background-image: url('../img/portfolio/6.jpg')
         background-size: cover  
   &.s7
     background-image: url('../img/kta_bg-2.jpg')
     background-repeat: no-repeat
     background-size: cover
-  .form-kta
-    input[type="text"],
-    .checkbox-wrap,
-    .btn
-      width: 520px
-    .checkbox-wrap
-      background-color: #fff
-      padding: 15px 15px 15px 45px
-      margin: 25px auto 0
-      font-size: 14px
-      position: relative
-      #accept
-        position: absolute
-        left: 0
-        top: 0
-        z-index: -1
-        opacity: 0
-        + label
-          display: inline-flex
-          align-items: center
-          user-select: none
-          &::before
-            content: ''
-            display: inline-block
-            width: 2em
-            height: 2em
-            flex-shrink: 0
-            flex-grow: 0
-            border: 1px solid #adb5bd
-            border-radius: 0.25em
-            margin-right: 0.5em
-            background-repeat: no-repeat
-            background-position: center center
-            background-size: 50% 50%
-      .text
+    .form-kta
+      input[type="text"],
+      .checkbox-wrap,
+      .btn
+        width: 520px
+      .checkbox-wrap
+        background-color: #fff
+        padding: 15px
+        margin: 25px auto 0
+        font-size: 14px
+        position: relative
+        display: flex
+        flex-direction: row
+        #accept
+          position: absolute
+          left: 0
+          top: 0
+          z-index: -1
+          opacity: 0
+          + label
+            display: inline-flex
+            align-items: center
+            user-select: none
+            &::before
+              content: ''
+              display: inline-block
+              width: 30px
+              height: 30px
+              flex-shrink: 0
+              flex-grow: 0
+              border: 2px solid $accent2
+              margin-right: 0.5em
+              background-repeat: no-repeat
+              background-position: center center
+          &:checked + label::before
+            background-image: url('../img/sprite_main.svg')
+            background-repeat: 
+            background-position: -107px 0px
+        .text
+          text-align: left
+          display: flex
+          margin-left: 10px
+  &.s8
+    .content-wrap
+      .title
         text-align: left
+      .data-wrap
+        .data-title
+          margin: 50px 0 10px
+        .data
+          display: inline-flex
+        .radio
+          position: absolute
+          z-index: -1
+          opacity: 0
+          + label
+            display: inline-flex
+            color: $text
+            background-color: #F7F6F5
+            padding: 15px            
+            border-radius: 2px
+          &:checked + label
+            background-color: $accent2
+            box-shadow: 0px 4px 12px rgba(86, 70, 62, 0.28)
+            color: #fff
+        &-title
+        &.data-1
