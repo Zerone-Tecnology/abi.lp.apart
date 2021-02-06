@@ -34,12 +34,24 @@ ul
   margin: 0
   padding: 0
   list-style-type: none
+.form-kta
+  text-align: center
+  input[type="text"]
+    display: block
+    padding: 15px
+    margin: 15px auto
+    border: none
+  input[type="checkbox"]
+    display: block
+  .btn
+    border: none
 .btn
   display: inline-block
   padding: 15px 50px
   border-radius: 4px
   font-weight: 700
   text-transform: lowercase
+  background-repeat: no-repeat
   &:hover
     background-color: lighten(#ccc, 5%)
   &-orange
@@ -55,11 +67,18 @@ ul
       height: 15px
       margin-left: 15px
       display: inline-block
-      background-image: url('../img/sprite_main.png')
+      background-image: url('../img/sprite_main.svg')
       background-position: -50px -52px
     &:hover
       color: $accent
       background-color: transparent
+  &-play
+    width: 120px
+    height: 120px
+    border-radius: 50%
+    background-color: #fff
+    background-image: url('../img/sprite_main.svg')
+    background-position: 25px -192px
 .header
   background-image: url('../img/header_bg.jpg')
   background-repeat: no-repeat
@@ -73,6 +92,10 @@ ul
         padding: 30px 15px 20px
         &.active
           border-bottom: 2px solid $accent2
+        &:hover
+          border-bottom: 2px solid $accent
+          a
+            color: $accent
     .phone-wrap
       text-align: right
       padding: 0 25px
@@ -90,7 +113,7 @@ ul
           position: absolute
           top: 0
           background-repeat: no-repeat
-          background-image: url('../img/sprite_main.png')
+          background-image: url('../img/sprite_main.svg')
         &::after
           opacity: 0  
         &::before
@@ -167,7 +190,7 @@ ul
         display: block
       .block_content
         .icon
-          background-image: url('../img/sprite_main.png')
+          background-image: url('../img/sprite_main.svg')
           background-repeat: no-repeat
           width: 50px
           height: 50px
@@ -195,7 +218,7 @@ ul
     .block
       text-align: center
       .icon
-        background-image: url('../img/sprite_main.png')
+        background-image: url('../img/sprite_main.svg')
         background-repeat: no-repeat
         width: 100px
         height: 100px
@@ -349,3 +372,131 @@ ul
         padding: 15px
         &-2
           padding: 55px 0
+  &.s6
+    .title
+      margin-bottom: 55px
+    .block
+      background-color: #ccc
+      display: inline-block
+      vertical-align: top
+      float: left
+      margin: 5px
+      &:hover
+        .content-wrap
+          opacity: 1
+      .content-wrap
+        padding: 55px 20px 30px
+        transition: all .5s ease
+        height: 100%
+        width: 100%
+        opacity: 0
+        background-color: #fff
+        p
+          margin-top: 30px
+        .user
+          font-weight: 700
+          position: relative
+          height: 35px
+          .icon
+            width: 40px
+            height: 40px
+            left: 0
+            top: 0
+            position: absolute
+            display: inline-block
+            border-radius: 50%
+            background-color: #dddddd
+            background-image: url('../img/sprite_main.svg')
+            background-repeat: no-repeat
+          &-customer
+            padding: 7px 0 0 50px
+            .icon
+              background-position: -54px -107px
+          &-business
+            padding: 0 0 0 50px
+            .icon
+              background-position: -104px -107px
+      &.b-1
+        width: 500px
+        height: 500px
+      &.b-2
+        width: 245px
+        height: 245px
+      &.b-3
+        width: 500px
+        height: 245px
+      &.portfolio-1
+        background-image: url('../img/portfolio/1.jpg')
+        background-size: cover
+        .content-wrap
+          background-color: transparent
+          position: relative
+          height: 100%
+          width: 100%
+          .btn-play
+            position: absolute
+            top: 50%
+            left: 50%
+            margin-top: -60px
+            margin-left: -60px
+      &.portfolio-2
+        background-image: url('../img/portfolio/2.jpg')
+        background-size: cover  
+      &.portfolio-3
+        background-image: url('../img/portfolio/3.jpg')
+        background-size: cover  
+      &.portfolio-4
+        background-image: url('../img/portfolio/4.jpg')
+        background-size: cover  
+      &.portfolio-5
+        background-image: url('../img/portfolio/5.jpg')
+        background-size: cover  
+      &.portfolio-6
+        background-image: url('../img/portfolio/6.jpg')
+        background-size: cover  
+      &.portfolio-7
+        background-image: url('../img/portfolio/7.jpg')
+        background-size: cover  
+      &.portfolio-8
+        background-image: url('../img/portfolio/8.jpg')
+        background-size: cover  
+  &.s7
+    background-image: url('../img/kta_bg-2.jpg')
+    background-repeat: no-repeat
+    background-size: cover
+  .form-kta
+    input[type="text"],
+    .checkbox-wrap,
+    .btn
+      width: 520px
+    .checkbox-wrap
+      background-color: #fff
+      padding: 15px 15px 15px 45px
+      margin: 25px auto 0
+      font-size: 14px
+      position: relative
+      #accept
+        position: absolute
+        left: 0
+        top: 0
+        z-index: -1
+        opacity: 0
+        + label
+          display: inline-flex
+          align-items: center
+          user-select: none
+          &::before
+            content: ''
+            display: inline-block
+            width: 2em
+            height: 2em
+            flex-shrink: 0
+            flex-grow: 0
+            border: 1px solid #adb5bd
+            border-radius: 0.25em
+            margin-right: 0.5em
+            background-repeat: no-repeat
+            background-position: center center
+            background-size: 50% 50%
+      .text
+        text-align: left
