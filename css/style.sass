@@ -517,6 +517,7 @@ ul
           margin: 50px 0 10px
         .data
           display: inline-flex
+          width: 45%
         .radio
           position: absolute
           z-index: -1
@@ -527,9 +528,31 @@ ul
             background-color: #F7F6F5
             padding: 15px            
             border-radius: 2px
+            width: 90%
+            text-align: center
           &:checked + label
             background-color: $accent2
             box-shadow: 0px 4px 12px rgba(86, 70, 62, 0.28)
             color: #fff
         &-title
-        &.data-1
+          font-weight: 300
+      .slider
+        -webkit-appearance: none
+        position: relative
+        &::-webkit-slider-runnable-track
+          width: 300px
+          height: 2px
+          border: none
+          border-radius: 3px
+        ::-webkit-slider-thumb
+          -webkit-appearance: none
+          border: none
+          height: 12px
+          width: 12px
+          border-radius: 510%
+          background: #141414
+          border: 2px solid #515151
+          margin-top: -5px
+          cursor: pointer
+        &:focus
+          outline: none
