@@ -73,6 +73,10 @@ ul {
   border: none;
 }
 
+.img-wrap img {
+  width: 100%;
+}
+
 .btn {
   display: inline-block;
   padding: 15px 50px;
@@ -801,6 +805,7 @@ ul {
 
 .block_wrap.s7 .form-kta .checkbox-wrap #accept:checked + label::before {
   background-image: url("../img/sprite_main.svg");
+  background-repeat: no-repeat;
   background-position: -107px 0px;
 }
 
@@ -825,6 +830,7 @@ ul {
   display: -ms-inline-flexbox;
   display: inline-flex;
   width: 45%;
+  margin-bottom: 15px;
 }
 
 .block_wrap.s8 .content-wrap .data-wrap .radio {
@@ -856,9 +862,50 @@ ul {
   font-weight: 300;
 }
 
+.block_wrap.s8 .content-wrap .data-wrap-slider {
+  margin-bottom: 25px;
+}
+
+.block_wrap.s8 .content-wrap .data-wrap .data-summ {
+  -webkit-box-shadow: 0px 2px 9px rgba(86, 70, 62, 0.16);
+          box-shadow: 0px 2px 9px rgba(86, 70, 62, 0.16);
+  border-radius: 2px;
+  display: inline-block;
+  padding: 15px 25px;
+  margin-left: 25px;
+}
+
+.block_wrap.s8 .content-wrap .sl {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.block_wrap.s8 .content-wrap .sl.sl-1 {
+  width: 65%;
+  padding-right: 15px;
+  position: relative;
+}
+
+.block_wrap.s8 .content-wrap .sl.sl-1 .lbl-1 {
+  float: left;
+}
+
+.block_wrap.s8 .content-wrap .sl.sl-1 .lbl-2 {
+  float: right;
+}
+
+.block_wrap.s8 .content-wrap .sl.sl-2 {
+  width: 20%;
+  padding: 15px;
+  -webkit-box-shadow: 0px 2px 9px rgba(86, 70, 62, 0.16);
+          box-shadow: 0px 2px 9px rgba(86, 70, 62, 0.16);
+  border-radius: 2px;
+}
+
 .block_wrap.s8 .content-wrap .slider {
   -webkit-appearance: none;
   position: relative;
+  width: 100%;
 }
 
 .block_wrap.s8 .content-wrap .slider::-webkit-slider-runnable-track {
@@ -868,19 +915,24 @@ ul {
   border-radius: 3px;
 }
 
-.block_wrap.s8 .content-wrap .slider ::-webkit-slider-thumb {
+.block_wrap.s8 .content-wrap .slider::-webkit-slider-thumb {
   -webkit-appearance: none;
   border: none;
-  height: 12px;
-  width: 12px;
-  border-radius: 510%;
-  background: #141414;
-  border: 2px solid #515151;
-  margin-top: -5px;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: #EE3E18;
+  border: 3px solid #fff;
+  margin-top: -10px;
   cursor: pointer;
 }
 
 .block_wrap.s8 .content-wrap .slider:focus {
   outline: none;
+}
+
+.block_wrap.s10 .block .num {
+  font-size: 48px;
+  font-weight: 700;
 }
 /*# sourceMappingURL=style.css.map */
