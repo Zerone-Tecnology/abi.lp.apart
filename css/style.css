@@ -965,11 +965,36 @@ ul {
 }
 
 .block_wrap.s11 {
-  background-image: url("../img/kta_bg-3.jpg");
+  background-image: url("../img/kta_bg-2.jpg");
 }
 
 .block_wrap.s13 .review-wrap .block {
   text-align: center;
   padding: 45px;
+}
+
+.block_wrap.s14 {
+  background-image: url("../img/kta_bg-2.jpg");
+}
+
+.block_wrap.s15 .certificate-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.block_wrap.s15 .certificate-wrap .block {
+  width: 25%;
+  opacity: 0.7;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+.block_wrap.s15 .certificate-wrap .block:hover {
+  opacity: 1;
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
 }
 /*# sourceMappingURL=style.css.map */
