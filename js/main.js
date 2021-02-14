@@ -38,4 +38,19 @@ $(document).ready(function(){
         this.parentNode.getElementsByTagName('style')[0].innerHTML += "#" + this.parentNode.id + " input[type=range]::-webkit-slider-runnable-track {background:linear-gradient(to right, #EE3E18 0%, #EE3E18 " + a + "%, #ccc " + a + "%)} #" + this.parentNode.id + ":hover input[type=range]:after{left: " + p + "px}";
         document.getElementById("demo").innerHTML = a;
     })
+
+    $('.review-wrap').owlCarousel({
+        nav:true,
+		responsive: {
+			320: {
+				items: 1,
+			},
+			425: {
+				items: 2,
+			},
+			1024: {
+				items: 3
+			}
+		}
+	});
 });

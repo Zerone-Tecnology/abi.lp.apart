@@ -4,11 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ABI Landing Apartment</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/bootstrap-grid.min.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min.css">
+  <link rel="preconnect" type="text/css" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/animate.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/animate.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/owl.theme.default.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/magnific-popup.css" />
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
   <div class="header_top-wrap">
@@ -433,7 +436,7 @@
         </div>
       </div>
     </div>
-  </div>  
+  </div>
   <div class="block_wrap s7">
     <div class="container">
       <div class="row">
@@ -445,7 +448,7 @@
               <input type="text" name="phone" id="phone" placeholder="Номер телефона">
               <button class="btn btn-orange">Жду звонка!</button>
               <div class="checkbox-wrap">
-                <input type="checkbox" name="accept" id="accept" value="yes">
+                <input type="checkbox" name="accept" class="accept" id="accept" value="yes">
                 <label for="accept"></label>
                 <div class="text">Нажимая "знать точную стоимость", вы соглашаетесь на обработку персональных данных</div>
               </div>
@@ -529,7 +532,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <div class="title">Для вас удобная поэтапная система оплаты</div>
+          <div class="title">Для вас удобная поэтапная <br>система оплаты</div>
           <div class="row">
             <div class="col-md-4">
               <div class="block block-1">
@@ -550,7 +553,107 @@
               </div>
             </div>
           </div>
-          <div class="txt-desc">Стоимость и сроки работ зависят от сложности и объема работ</div>
+          <div class="txt-desc">Стоимость и сроки работ зависят <br> от сложности и объема работ</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="block_wrap s11">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 offset-md-2">
+          <div class="content-wrap">
+            <div class="title">Приблизительная стоимость <br>вашего ремонта 2 000 000 ТГ</div>
+            <form action="mail.php" class="form-kta">
+              <input type="text" name="name" id="name" placeholder="Имя">              
+              <input type="text" name="phone" id="phone" placeholder="Номер телефона">
+              <button class="btn btn-orange">Узнать точную стоимость!</button>
+              <div class="checkbox-wrap">
+                <input type="checkbox" name="accept" class="accept" id="accept-2" value="yes">
+                <label for="accept-2"></label>
+                <div class="text">Нажимая "знать точную стоимость", вы соглашаетесь на обработку персональных данных</div>
+              </div>
+              
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="block_wrap s12">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="title">СВЯЖИТЕСЬ С НАМИ</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-7">
+          <div class="row content-wrap">
+            <div class="col-md-6">
+              <div class="title-sm">Контакты</div>
+              <p>Городской <br> <a href="tel:+77273648359">+7 727 364 83 59</a></p>
+              <p>Карлыгаш <br> <a href="tel:+77021986757">+7 702 198 67 57</a></p>
+              <p>Алмас <br> <a href="tel:+77071410641">+7 707 141 06 41</a></p>
+              <div class="title-sm">социальные сети</div>
+              <ul class="social-wrap">
+                <li><a href="#"><div class="icon icon-in"></div></a></li>
+                <li><a href="#"><div class="icon icon-wa"></div></a></li>
+                <li><a href="#"><div class="icon icon-fb"></div></a></li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <div class="title-sm">почта</div>
+              <p><a href="mailto:sales@abigroup.kz">sales@abigroup.kz</a></p>
+              <div class="title-sm">Как нас найти</div>
+              <p>г. Алматы <br>проспект Райымбек батыр 496а, офис №409</p>
+              <p>г. Нур-Султан <br>р-н Байконыр, ул.Бактыораза Бейсекбаева 15/1, 2 этаж, офис №5</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5">
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="block_wrap s13">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="title">Отзывы клиентов</div>
+          <div class="review-wrap owl-carousel">
+            <div class="block">
+              <div class="img-wrap">
+                <a href="#" class="social icon-in"></a>
+              </div>
+              <div class="title-sm">Бахытбек</div>
+              <p>Хочется выразить благодарность за высокое качество выполнения ремонта однокомнатной квартиры</p>
+            </div>
+            <div class="block">
+              <div class="img-wrap">
+                <a href="#" class="social icon-in"></a>
+              </div>
+              <div class="title-sm">Гулим </div>
+              <p>Так совпало, что на работе 
+                у нескольких сотрудников случилась покупка квартир 
+                в новостройках. <a href="#">+ развернуть</a></p>
+            </div>
+            <div class="block">
+              <div class="img-wrap">
+                <a href="#" class="social icon-in"></a>
+              </div>
+              <div class="title-sm">Айдана</div>
+              <p>Хочу поблагодарить компанию ABI GROUP за качественный ремонт! После разработки дизайн-проекта <a href="#">+ развернуть</a></p>
+            </div>
+            <div class="block">
+              <div class="img-wrap">
+                <a href="#" class="social icon-in"></a>
+              </div>
+              <div class="title-sm">Айдана</div>
+              <p>Хочу поблагодарить компанию ABI GROUP за качественный ремонт! После разработки дизайн-проекта <a href="#">+ развернуть</a></p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -558,6 +661,8 @@
 
 <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 <script src="js/wow.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

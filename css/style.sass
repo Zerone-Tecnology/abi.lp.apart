@@ -30,6 +30,9 @@ body
 a
   color: $text
   text-decoration: none
+  &:hover
+    color: $accent
+    border-bottom: 1px dashed $accent
 ul
   margin: 0
   padding: 0
@@ -84,6 +87,50 @@ ul
     background-color: #fff
     background-image: url('../img/sprite_main.svg')
     background-position: 25px -192px
+.form-kta
+  input[type="text"],
+  .checkbox-wrap,
+  .btn
+    width: 520px
+  .checkbox-wrap
+    background-color: #fff
+    padding: 15px
+    margin: 25px auto 0
+    font-size: 14px
+    position: relative
+    display: flex
+    flex-direction: row
+    .accept
+      position: absolute
+      left: 0
+      top: 0
+      z-index: -1
+      opacity: 0
+      + label
+        display: inline-flex
+        align-items: center
+        user-select: none
+        &::before
+          content: ''
+          display: inline-block
+          width: 30px
+          height: 30px
+          flex-shrink: 0
+          flex-grow: 0
+          border: 2px solid $accent2
+          margin-right: 0.5em
+          background-repeat: no-repeat
+          background-position: center center
+      &:checked + label::before
+        background-image: url('../img/sprite_main.svg')
+        background-repeat: no-repeat
+        background-position: -107px 0px
+    .text
+      text-align: left
+      display: flex
+      margin-left: 10px
+  
+  
 .header
   background-image: url('../img/header_bg.jpg')
   background-repeat: no-repeat
@@ -175,6 +222,10 @@ ul
     font-weight: 700
     text-transform: uppercase
     text-align: center
+    margin-bottom: 55px
+    &-sm
+      font-weight: 700
+      text-transform: uppercase
   &.s1
     border-radius: 2px
     background-color: #ffffff
@@ -469,48 +520,6 @@ ul
     background-image: url('../img/kta_bg-2.jpg')
     background-repeat: no-repeat
     background-size: cover
-    .form-kta
-      input[type="text"],
-      .checkbox-wrap,
-      .btn
-        width: 520px
-      .checkbox-wrap
-        background-color: #fff
-        padding: 15px
-        margin: 25px auto 0
-        font-size: 14px
-        position: relative
-        display: flex
-        flex-direction: row
-        #accept
-          position: absolute
-          left: 0
-          top: 0
-          z-index: -1
-          opacity: 0
-          + label
-            display: inline-flex
-            align-items: center
-            user-select: none
-            &::before
-              content: ''
-              display: inline-block
-              width: 30px
-              height: 30px
-              flex-shrink: 0
-              flex-grow: 0
-              border: 2px solid $accent2
-              margin-right: 0.5em
-              background-repeat: no-repeat
-              background-position: center center
-          &:checked + label::before
-            background-image: url('../img/sprite_main.svg')
-            background-repeat: no-repeat
-            background-position: -107px 0px
-        .text
-          text-align: left
-          display: flex
-          margin-left: 10px
   &.s8
     .content-wrap
       .title
@@ -598,3 +607,11 @@ ul
         font-size: 48px
         font-weight: 700
         padding-bottom: 25px
+  &.s11
+    background-image: url('../img/kta_bg-3.jpg')
+  &.s12
+  &.s13
+    .review-wrap
+      .block
+        text-align: center
+        padding: 45px

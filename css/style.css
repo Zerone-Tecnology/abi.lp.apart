@@ -32,6 +32,11 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  color: #EE3E18;
+  border-bottom: 1px dashed #EE3E18;
+}
+
 ul {
   margin: 0;
   padding: 0;
@@ -123,6 +128,78 @@ ul {
   background-color: #fff;
   background-image: url("../img/sprite_main.svg");
   background-position: 25px -192px;
+}
+
+.form-kta input[type="text"],
+.form-kta .checkbox-wrap,
+.form-kta .btn {
+  width: 520px;
+}
+
+.form-kta .checkbox-wrap {
+  background-color: #fff;
+  padding: 15px;
+  margin: 25px auto 0;
+  font-size: 14px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.form-kta .checkbox-wrap .accept {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  opacity: 0;
+}
+
+.form-kta .checkbox-wrap .accept + label {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.form-kta .checkbox-wrap .accept + label::before {
+  content: '';
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  border: 2px solid #56463E;
+  margin-right: 0.5em;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.form-kta .checkbox-wrap .accept:checked + label::before {
+  background-image: url("../img/sprite_main.svg");
+  background-repeat: no-repeat;
+  background-position: -107px 0px;
+}
+
+.form-kta .checkbox-wrap .text {
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 10px;
 }
 
 .header {
@@ -261,6 +338,12 @@ ul {
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
+  margin-bottom: 55px;
+}
+
+.block_wrap .title-sm {
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .block_wrap.s1 {
@@ -745,78 +828,6 @@ ul {
   background-size: cover;
 }
 
-.block_wrap.s7 .form-kta input[type="text"],
-.block_wrap.s7 .form-kta .checkbox-wrap,
-.block_wrap.s7 .form-kta .btn {
-  width: 520px;
-}
-
-.block_wrap.s7 .form-kta .checkbox-wrap {
-  background-color: #fff;
-  padding: 15px;
-  margin: 25px auto 0;
-  font-size: 14px;
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
-.block_wrap.s7 .form-kta .checkbox-wrap #accept {
-  position: absolute;
-  left: 0;
-  top: 0;
-  z-index: -1;
-  opacity: 0;
-}
-
-.block_wrap.s7 .form-kta .checkbox-wrap #accept + label {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-}
-
-.block_wrap.s7 .form-kta .checkbox-wrap #accept + label::before {
-  content: '';
-  display: inline-block;
-  width: 30px;
-  height: 30px;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-  -webkit-box-flex: 0;
-      -ms-flex-positive: 0;
-          flex-grow: 0;
-  border: 2px solid #56463E;
-  margin-right: 0.5em;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-
-.block_wrap.s7 .form-kta .checkbox-wrap #accept:checked + label::before {
-  background-image: url("../img/sprite_main.svg");
-  background-repeat: no-repeat;
-  background-position: -107px 0px;
-}
-
-.block_wrap.s7 .form-kta .checkbox-wrap .text {
-  text-align: left;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: 10px;
-}
-
 .block_wrap.s8 .content-wrap .title {
   text-align: left;
 }
@@ -951,5 +962,14 @@ ul {
   font-size: 48px;
   font-weight: 700;
   padding-bottom: 25px;
+}
+
+.block_wrap.s11 {
+  background-image: url("../img/kta_bg-3.jpg");
+}
+
+.block_wrap.s13 .review-wrap .block {
+  text-align: center;
+  padding: 45px;
 }
 /*# sourceMappingURL=style.css.map */
