@@ -15,6 +15,7 @@ $(document).ready(function(){
 
     $('.range').each(function() {
         var n = this.getElementsByTagName('input')[0].value;
+        console.log('n: '+this.getElementsByTagName('input')[0].offsetWidth);
         var x = (n / 100) * (this.getElementsByTagName('input')[0].offsetWidth - 8) - 12;
         this.id = 'range' + i;
         if (this.getElementsByTagName('input')[0].value == 0) {
@@ -22,20 +23,21 @@ $(document).ready(function(){
         } else {
             this.className = "range rangeM"
         }
-        this.innerHTML += "<style>#" + this.id + " input[type=range]::-webkit-slider-runnable-track {background:linear-gradient(to right, #EE3E18 0%, #EE3E18 " + n + "%, #ccc " + n + "%)} #" + this.id + ":hover input[type=range]:after{left: " + x + "px}</style>";
+        this.innerHTML += "<style>#" + this.id + " input[type=range]::-webkit-slider-runnable-track {background:linear-gradient(to right, #56463E 0%, #56463E " + n + "%, #ccc " + n + "%)} #" + this.id + ":hover input[type=range]:after{left: " + x + "px}</style>";
         i++;
         // document.getElementById("demo").innerHTML = n;
     });
 
     $('input[type=range]').on("input", function() {
         var a = this.value;
+        console.log('a:'+a);
         var p = (a / 100) * (this.offsetWidth - 8) - 12;
         if (a == 0) {
             this.parentNode.className = "range"
         } else {
             this.parentNode.className = "range rangeM"
         }
-        this.parentNode.getElementsByTagName('style')[0].innerHTML += "#" + this.parentNode.id + " input[type=range]::-webkit-slider-runnable-track {background:linear-gradient(to right, #EE3E18 0%, #EE3E18 " + a + "%, #ccc " + a + "%)} #" + this.parentNode.id + ":hover input[type=range]:after{left: " + p + "px}";
+        this.parentNode.getElementsByTagName('style')[0].innerHTML += "#" + this.parentNode.id + " input[type=range]::-webkit-slider-runnable-track {background:linear-gradient(to right, #56463E 0%, #56463E " + a + "%, #ccc " + a + "%)} #" + this.parentNode.id + ":hover input[type=range]:after{left: " + p + "px}";
         document.getElementById("demo").innerHTML = a;
     })
 

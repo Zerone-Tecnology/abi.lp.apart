@@ -30,9 +30,9 @@ body
 a
   color: $text
   text-decoration: none
-  &:hover
-    color: $accent
-    border-bottom: 1px dashed $accent
+  // &:hover
+  //   color: $accent
+  //   border-bottom: 1px dashed $accent
 ul
   margin: 0
   padding: 0
@@ -60,14 +60,14 @@ ul
   font-weight: 700
   text-transform: lowercase
   background-repeat: no-repeat
-  &:hover
-    background-color: lighten(#ccc, 5%)
+  // &:hover
+    // box-shadow: 0px 9px 18px 3px rgba(24, 19, 18, 0.09)
   &-orange
     background-color: $accent
     color: #ffffff
-    box-shadow: 0px 9px 18px 3px rgba(238, 62, 24, 0.09)
+    // box-shadow: 0px 9px 18px 3px rgba(238, 62, 24, 0.09)
     &:hover
-      background-color: lighten($accent, 10%)
+      box-shadow: 0px 9px 18px 3px rgba(238, 62, 24, 0.09)
   &-arr
     &::after
       content: ''
@@ -145,9 +145,7 @@ ul
         &.active
           border-bottom: 2px solid $accent2
         &:hover
-          border-bottom: 2px solid $accent
-          a
-            color: $accent
+          border-bottom: 2px solid $accent2
     .phone-wrap
       text-align: right
       padding: 0 25px
@@ -588,8 +586,9 @@ ul
           height: 20px
           width: 20px
           border-radius: 50%
-          background: $accent
+          background: $accent2
           border: 3px solid #fff
+          box-shadow: 0px 2px 9px rgba(86, 70, 62, 0.16)
           margin-top: -10px
           cursor: pointer
         &:focus
@@ -615,16 +614,112 @@ ul
       .block
         text-align: center
         padding: 45px
+        .img-wrap
+          width: 100px
+          margin: 0 auto
+          margin-bottom: 25px
+          position: relative
+          .icon
+            position: absolute
+            right: 0
+            bottom: 0
+            width: 40px
+            height: 40px
+            border-radius: 50%
+            background-color: #fff
+            box-shadow: 0px 4px 12px rgba(86, 70, 62, 0.28)
+            &-in
+              background-image: url('../img/sprite_main.svg')
+              background-repeat: no-repeat
+              background-position: -176px -296px
+              &:hover
+                background-position: -137px -296px
+          img
+            width: 100%
   &.s14
     background-image: url('../img/kta_bg-2.jpg')
   &.s15
-    .certificate-wrap
+    .block-wrap
       display: flex
       flex-wrap: wrap
       .block
         width: 25%
         opacity: 0.7
         filter: grayscale(100%)
+        padding: 15px
+        img
+          width: 100%
         &:hover
           opacity: 1
           filter: grayscale(0%)
+  &.s16
+    .block-wrap
+      display: flex
+      flex-wrap: wrap
+      .block
+        width: 25%
+        opacity: 0.7
+        filter: grayscale(100%)
+        padding: 15px
+        img
+          width: 100%
+  &.s17
+    .block-wrap
+      display: flex
+      flex-wrap: wrap
+      align-items: center
+      justify-content: center
+      .block
+        width: 20%
+.footer
+  background-color: #352C28
+  color: #fff
+  padding: 45px 0
+  a
+    color: #fff
+  .block-wrap
+    display: flex
+    flex-wrap: wrap
+    .block
+      &-left
+        width: 20%
+        font-size: 14px
+        font-weight: 300
+        .lic
+          margin: 25px 0
+          padding-left: 50px
+          position: relative
+          &::before
+            content: ''
+            position: absolute
+            left: 0
+            background-image: url('../img/sprite_main.svg')
+            background-repeat: no-repeat
+            height: 40px
+            width: 40px
+            background-position: -110px -160px
+      &-center
+        width: 60%
+        .nav
+          li
+            display: inline-block
+            padding: 0 15px
+      &-right
+        width: 20%
+        a
+          display: block
+          margin: 15px 0
+          &:first-child
+            margin-top: 0
+        .phone
+          position: relative
+          &::before
+            content: ''
+            position: absolute
+            left: -30px
+            top: 0
+            background-image: url('../img/sprite_main.svg')
+            background-repeat: no-repeat
+            width: 20px
+            height: 25px
+            background-position: -135px 0
