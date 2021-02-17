@@ -15,7 +15,6 @@ $(document).ready(function(){
 
     $('.range').each(function() {
         var n = this.getElementsByTagName('input')[0].value;
-        console.log('n: '+this.getElementsByTagName('input')[0].offsetWidth);
         var x = (n / 100) * (this.getElementsByTagName('input')[0].offsetWidth - 8) - 12;
         this.id = 'range' + i;
         if (this.getElementsByTagName('input')[0].value == 0) {
@@ -54,5 +53,11 @@ $(document).ready(function(){
 				items: 3
 			}
 		}
+	});
+
+    $('.popup').magnificPopup({
+		type: 'inline',
+		removalDelay: 300,
+		mainClass: 'my-mfp-zoom-in'
 	});
 });

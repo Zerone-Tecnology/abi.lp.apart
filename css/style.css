@@ -1140,4 +1140,37 @@ ul {
   height: 25px;
   background-position: -135px 0;
 }
+
+.footer .zerone {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  left: 0;
+  right: 0;
+}
+
+.footer .zerone img {
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+.form-popup {
+  background-color: #fff;
+  width: 550px;
+  margin: 0 auto;
+  padding: 35px 55px;
+}
+
+.form-popup .title {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.form-popup input[type="text"],
+.form-popup .checkbox-wrap,
+.form-popup .btn {
+  width: 100%;
+  margin: 0;
+}
 /*# sourceMappingURL=style.css.map */
