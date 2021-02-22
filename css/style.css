@@ -82,6 +82,7 @@ ul {
   padding: 15px 50px;
   border-radius: 4px;
   font-weight: 700;
+  font-size: 18px;
   text-transform: lowercase;
   background-repeat: no-repeat;
 }
@@ -124,6 +125,8 @@ ul {
 .form-kta .checkbox-wrap,
 .form-kta .btn {
   width: 520px;
+  font-size: 18px;
+  padding: 23px;
 }
 
 .form-kta .checkbox-wrap {
@@ -1007,7 +1010,6 @@ ul {
 }
 
 .block_wrap.s15 .block-wrap .block {
-  width: 25%;
   opacity: 0.7;
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
@@ -1033,7 +1035,6 @@ ul {
 }
 
 .block_wrap.s16 .block-wrap .block {
-  width: 25%;
   opacity: 0.7;
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);

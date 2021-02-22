@@ -55,9 +55,34 @@ $(document).ready(function(){
 		}
 	});
 
+    $('.owl-cert').owlCarousel({
+        nav:true,
+		responsive: {
+			320: {
+				items: 2,
+			},
+			425: {
+				items: 3,
+			},
+			1024: {
+				items: 4
+			}
+		}
+	});
+
     $('.popup').magnificPopup({
 		type: 'inline',
 		removalDelay: 300,
 		mainClass: 'my-mfp-zoom-in'
+	});
+
+    $('.image-popup-vertical-fit').magnificPopup({
+		type: 'image',
+		closeOnContentClick: true,
+		mainClass: 'mfp-img-mobile',
+		image: {
+			verticalFit: true
+		}
+		
 	});
 });

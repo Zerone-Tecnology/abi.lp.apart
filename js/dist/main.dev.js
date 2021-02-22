@@ -24,11 +24,12 @@ $(document).ready(function () {
       this.className = "range rangeM";
     }
 
-    this.innerHTML += "<style>#" + this.id + " input[type=range]::-webkit-slider-runnable-track {background:linear-gradient(to right, #EE3E18 0%, #EE3E18 " + n + "%, #ccc " + n + "%)} #" + this.id + ":hover input[type=range]:after{left: " + x + "px}</style>";
+    this.innerHTML += "<style>#" + this.id + " input[type=range]::-webkit-slider-runnable-track {background:linear-gradient(to right, #56463E 0%, #56463E " + n + "%, #ccc " + n + "%)} #" + this.id + ":hover input[type=range]:after{left: " + x + "px}</style>";
     i++; // document.getElementById("demo").innerHTML = n;
   });
   $('input[type=range]').on("input", function () {
     var a = this.value;
+    console.log('a:' + a);
     var p = a / 100 * (this.offsetWidth - 8) - 12;
 
     if (a == 0) {
@@ -37,7 +38,48 @@ $(document).ready(function () {
       this.parentNode.className = "range rangeM";
     }
 
-    this.parentNode.getElementsByTagName('style')[0].innerHTML += "#" + this.parentNode.id + " input[type=range]::-webkit-slider-runnable-track {background:linear-gradient(to right, #EE3E18 0%, #EE3E18 " + a + "%, #ccc " + a + "%)} #" + this.parentNode.id + ":hover input[type=range]:after{left: " + p + "px}";
+    this.parentNode.getElementsByTagName('style')[0].innerHTML += "#" + this.parentNode.id + " input[type=range]::-webkit-slider-runnable-track {background:linear-gradient(to right, #56463E 0%, #56463E " + a + "%, #ccc " + a + "%)} #" + this.parentNode.id + ":hover input[type=range]:after{left: " + p + "px}";
     document.getElementById("demo").innerHTML = a;
+  });
+  $('.review-wrap').owlCarousel({
+    nav: true,
+    responsive: {
+      320: {
+        items: 1
+      },
+      425: {
+        items: 2
+      },
+      1024: {
+        items: 3
+      }
+    }
+  });
+  $('.owl-cert').owlCarousel({
+    nav: true,
+    responsive: {
+      320: {
+        items: 2
+      },
+      425: {
+        items: 3
+      },
+      1024: {
+        items: 4
+      }
+    }
+  });
+  $('.popup').magnificPopup({
+    type: 'inline',
+    removalDelay: 300,
+    mainClass: 'my-mfp-zoom-in'
+  });
+  $('.image-popup-vertical-fit').magnificPopup({
+    type: 'image',
+    closeOnContentClick: true,
+    mainClass: 'mfp-img-mobile',
+    image: {
+      verticalFit: true
+    }
   });
 });
