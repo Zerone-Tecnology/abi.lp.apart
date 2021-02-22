@@ -42,6 +42,7 @@ $(document).ready(function(){
 
     $('.review-wrap').owlCarousel({
         nav:true,
+        navText: '',
 		responsive: {
 			320: {
 				items: 1,
@@ -57,6 +58,7 @@ $(document).ready(function(){
 
     $('.owl-cert').owlCarousel({
         nav:true,
+        navText: '',
 		responsive: {
 			320: {
 				items: 2,

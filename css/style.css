@@ -15,7 +15,7 @@ body {
 
 /* Works on Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
-  width: 3px;
+  width: 10px;
 }
 
 *::-webkit-scrollbar-track {
@@ -1173,5 +1173,51 @@ ul {
 .form-popup .btn {
   width: 100%;
   margin: 0;
+}
+
+.owl-carousel .owl-nav {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+}
+
+.owl-carousel .owl-nav button {
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 2px 9px rgba(86, 70, 62, 0.16);
+          box-shadow: 0px 2px 9px rgba(86, 70, 62, 0.16);
+  border-radius: 2px;
+  padding: 15px;
+}
+
+.owl-carousel .owl-nav button.owl-next {
+  background-image: url("data:image/svg+xml,%3Csvg width='25' height='49' viewBox='0 0 25 49' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L24 24.5L1 48' stroke='%2356463E' stroke-width='2' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+  width: 50px;
+  height: 100px;
+  position: absolute;
+  background-position: center;
+  background-repeat: no-repeat;
+  right: -50px;
+  top: -50px;
+}
+
+.owl-carousel .owl-nav button.owl-next:hover {
+  background-image: url("data:image/svg+xml,%3Csvg width='25' height='49' viewBox='0 0 25 49' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L24 24.5L1 48' stroke='%23EE3E18' stroke-width='2' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+}
+
+.owl-carousel .owl-nav button.owl-prev {
+  background-image: url("data:image/svg+xml,%3Csvg width='25' height='49' viewBox='0 0 25 49' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L24 24.5L1 48' stroke='%2356463E' stroke-width='2' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+  width: 50px;
+  height: 100px;
+  position: absolute;
+  background-position: center;
+  background-repeat: no-repeat;
+  left: -50px;
+  top: -50px;
+}
+
+.owl-carousel .owl-nav button.owl-prev:hover {
+  background-image: url("data:image/svg+xml,%3Csvg width='25' height='49' viewBox='0 0 25 49' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L24 24.5L1 48' stroke='%23EE3E18' stroke-width='2' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
 }
 /*# sourceMappingURL=style.css.map */
