@@ -730,7 +730,7 @@ ul {
 }
 
 .block_wrap.s6 .block .content-wrap .user-customer .icon {
-  background-position: -54px -107px;
+  background-position: -54px -118px;
 }
 
 .block_wrap.s6 .block .content-wrap .user-business {
@@ -738,7 +738,7 @@ ul {
 }
 
 .block_wrap.s6 .block .content-wrap .user-business .icon {
-  background-position: -104px -107px;
+  background-position: -104px -118px;
 }
 
 .block_wrap.s6 .block.b-1 {
@@ -1160,6 +1160,7 @@ ul {
   width: 550px;
   margin: 0 auto;
   padding: 35px 55px;
+  position: relative;
 }
 
 .form-popup .title {
