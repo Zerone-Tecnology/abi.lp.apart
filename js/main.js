@@ -87,5 +87,34 @@ $(document).ready(function(){
 			verticalFit: true
 		}
 		
+    });
+
+    $('.form-kta').submit(function(){
+        $.magnificPopup.open({
+        items: {
+            src: '#thanksPopup'
+        },
+        type: 'inline'
+        });
+        return false;
+    });
+    
+    //E-mail Ajax Send
+	$("#callback").submit(function() {
+        var th = $(this);
+        
+		// $.ajax({
+		// 	type: "POST",
+		// 	url: "mail.php",
+		// 	data: th.serialize()
+		// }).done(function() {
+		// 	alert("Спасибо, ваша заявка принята!");
+		// 	setTimeout(function() {
+		// 		// Done Functions
+		// 		$.magnificPopup.close();
+		// 		th.trigger("reset");
+		// 	}, 1000);
+		// });
+		// return false;
 	});
 });
