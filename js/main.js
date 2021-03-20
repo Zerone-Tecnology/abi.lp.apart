@@ -14,14 +14,15 @@ $(document).ready(function(){
     var i = 1;
 
     $('.range').each(function() {
-        var n = this.getElementsByTagName('input')[0].value;
-        var x = (n / 100) * (this.getElementsByTagName('input')[0].offsetWidth - 8) - 12;
+        var n = 0;
+        var x = (n / 400) * (this.getElementsByTagName('input')[0].offsetWidth - 8) - 12;
         this.id = 'range' + i;
         if (this.getElementsByTagName('input')[0].value == 0) {
             this.className = "range"
         } else {
             this.className = "range rangeM"
         }
+        // console.log(n, x);
         this.innerHTML += "<style>#" + this.id + " input[type=range]::-webkit-slider-runnable-track {background:linear-gradient(to right, #56463E 0%, #56463E " + n + "%, #ccc " + n + "%)} #" + this.id + ":hover input[type=range]:after{left: " + x + "px}</style>";
         i++;
         // document.getElementById("demo").innerHTML = n;
@@ -29,15 +30,17 @@ $(document).ready(function(){
 
     $('input[type=range]').on("input", function() {
         var a = this.value;
-        console.log('a:'+a);
-        var p = (a / 100) * (this.offsetWidth - 8) - 12;
+        var p = (a / 400) * (this.offsetWidth - 8) - 12;
+        var aa = (p / this.offsetWidth) * 100;
         if (a == 0) {
             this.parentNode.className = "range"
         } else {
             this.parentNode.className = "range rangeM"
         }
-        this.parentNode.getElementsByTagName('style')[0].innerHTML += "#" + this.parentNode.id + " input[type=range]::-webkit-slider-runnable-track {background:linear-gradient(to right, #56463E 0%, #56463E " + a + "%, #ccc " + a + "%)} #" + this.parentNode.id + ":hover input[type=range]:after{left: " + p + "px}";
+        console.log(aa, p);
+        this.parentNode.getElementsByTagName('style')[0].innerHTML += "#" + this.parentNode.id + " input[type=range]::-webkit-slider-runnable-track {background:linear-gradient(to right, #56463E 0%, #56463E " + aa + "%, #ccc " + aa + "%)} #" + this.parentNode.id + ":hover input[type=range]:after{left: " + p + "px}";
         document.getElementById("demo").innerHTML = a;
+        document.getElementById("data-summ").getElementsByTagName('span')[0].innerHTML = a*2200;
     })
 
     $('.review-wrap').owlCarousel({
