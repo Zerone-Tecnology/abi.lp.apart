@@ -360,6 +360,9 @@ ul
           padding: 25px 45px
           border-left: 2px solid $accent2
           display: inline-block
+          p
+            font-size: 22px
+            font-weight: 700
         .title_2
           text-transform: uppercase
           font-weight: 700
@@ -367,6 +370,7 @@ ul
           margin-bottom: 0
       .btn-orange
         box-shadow: none
+        font-size: 22px
       .content-wrap
         padding: 25px 45px 20px
         height: 455px
@@ -598,6 +602,61 @@ ul
           outline: none
   &.s9
     text-align: center
+    .block-wrap
+      display: flex
+      flex-wrap: wrap
+      margin-bottom: 55px
+      .title
+        font-size: 16px
+        margin: 25px 0
+      .block
+        padding: 55px 15px
+        box-shadow: 0px 2px 9px rgba(86, 70, 62, 0.16)
+        border-radius: 2px
+        margin: 5px
+        position: relative
+        &::before
+          content: ''
+          position: absolute
+          bottom: 15px
+          margin: auto
+          width: 15px
+          height: 15px
+          border-radius: 50%
+          background-color: $accent2
+        &-top
+          width: 250px
+        &-bottom
+          width: 520px
+        &-1, &-4
+          width: 260px
+        &-5
+          .left, .right
+            width: 45%
+            display: inline-block
+          .right
+            text-align: right
+            .btn
+              padding-left: 15px
+              padding-right: 15px
+        .icon
+          width: 70px
+          height: 70px
+          background-image: url('../img/sprite_main.svg')
+          background-repeat: no-repeat
+          margin: auto
+        &-1 .icon
+          background-position: 0px -350px
+        &-2 .icon
+          background-position: -70px -350px
+        &-3 .icon
+          background-position: -140px -350px
+        &-4 .icon
+          background-position: -210px -350px
+        &-5 .icon
+          background-position: -290px -350px
+        &-6 .icon
+          background-position: -360px -350px
   &.s10
     text-align: center
     .block
@@ -605,6 +664,7 @@ ul
       padding: 45px
       box-shadow: 0px 2px 9px rgba(86, 70, 62, 0.16)
       border-radius: 2px
+      min-height: 220px
       .num
         font-size: 48px
         font-weight: 700
@@ -743,11 +803,12 @@ ul
     font-size: 20px
     text-transform: uppercase
     font-weight: 700
+    margin-bottom: 25px
   input[type="text"],
   .checkbox-wrap,
   .btn
     width: 100%
-    margin: 0
+    margin: 25px 0 0
 .owl-carousel
   .owl-nav
     position: absolute
