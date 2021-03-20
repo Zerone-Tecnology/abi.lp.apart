@@ -22,7 +22,6 @@ $(document).ready(function(){
         } else {
             this.className = "range rangeM"
         }
-        // console.log(n, x);
         this.innerHTML += "<style>#" + this.id + " input[type=range]::-webkit-slider-runnable-track {background:linear-gradient(to right, #56463E 0%, #56463E " + n + "%, #ccc " + n + "%)} #" + this.id + ":hover input[type=range]:after{left: " + x + "px}</style>";
         i++;
         // document.getElementById("demo").innerHTML = n;
@@ -37,7 +36,6 @@ $(document).ready(function(){
         } else {
             this.parentNode.className = "range rangeM"
         }
-        console.log(aa, p);
         this.parentNode.getElementsByTagName('style')[0].innerHTML += "#" + this.parentNode.id + " input[type=range]::-webkit-slider-runnable-track {background:linear-gradient(to right, #56463E 0%, #56463E " + aa + "%, #ccc " + aa + "%)} #" + this.parentNode.id + ":hover input[type=range]:after{left: " + p + "px}";
         document.getElementById("demo").innerHTML = a;
         document.getElementById("data-summ").getElementsByTagName('span')[0].innerHTML = a*2200;
