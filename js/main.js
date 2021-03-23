@@ -73,6 +73,12 @@ $(document).ready(function(){
 		}
 	});
 
+    $('.gallery').owlCarousel({
+        nav:true,
+        navText: '',
+        items:1
+	});
+
     $('.popup').magnificPopup({
 		type: 'inline',
 		removalDelay: 300,

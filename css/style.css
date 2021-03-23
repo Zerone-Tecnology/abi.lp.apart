@@ -1094,6 +1094,8 @@ ul {
 
 .block_wrap.s13 .review-wrap .block .img-wrap img {
   width: 100%;
+  border-radius: 50%;
+  overflow: hidden;
 }
 
 .block_wrap.s14 {
@@ -1330,6 +1332,55 @@ ul {
 #thanksPopup {
   text-align: center;
   padding: 65px 25px;
+}
+
+.galleryPopup {
+  width: 70%;
+}
+
+.galleryPopup .info-wrap {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  padding: 35px;
+  z-index: 9;
+  background-color: #fff;
+  width: 470px;
+}
+
+.galleryPopup .info-wrap .user {
+  font-weight: 700;
+  position: relative;
+  height: 35px;
+}
+
+.galleryPopup .info-wrap .user .icon {
+  width: 40px;
+  height: 40px;
+  left: 0;
+  top: 0;
+  position: absolute;
+  display: inline-block;
+  border-radius: 50%;
+  background-color: #dddddd;
+  background-image: url("../img/sprite_main.svg");
+  background-repeat: no-repeat;
+}
+
+.galleryPopup .info-wrap .user-customer {
+  padding: 7px 0 0 50px;
+}
+
+.galleryPopup .info-wrap .user-customer .icon {
+  background-position: -54px -118px;
+}
+
+.galleryPopup .info-wrap .user-business {
+  padding: 0 0 0 50px;
+}
+
+.galleryPopup .info-wrap .user-business .icon {
+  background-position: -104px -118px;
 }
 
 .error-page {

@@ -699,6 +699,8 @@ ul
                 background-position: -137px -296px
           img
             width: 100%
+            border-radius: 50%
+            overflow: hidden
   &.s14
     background-image: url('../img/kta_bg-2.jpg')
   &.s15
@@ -847,7 +849,39 @@ ul
 #thanksPopup
   text-align: center
   padding: 65px 25px
-  
+.galleryPopup
+  width: 70%
+  .info-wrap
+    position: absolute
+    top: 15px
+    left: 15px
+    padding: 35px
+    z-index: 9
+    background-color: #fff
+    width: 470px
+    .user
+      font-weight: 700
+      position: relative
+      height: 35px
+      .icon
+        width: 40px
+        height: 40px
+        left: 0
+        top: 0
+        position: absolute
+        display: inline-block
+        border-radius: 50%
+        background-color: #dddddd
+        background-image: url('../img/sprite_main.svg')
+        background-repeat: no-repeat
+      &-customer
+        padding: 7px 0 0 50px
+        .icon
+          background-position: -54px -118px
+      &-business
+        padding: 0 0 0 50px
+        .icon
+          background-position: -104px -118px
 .error-page
   margin: 15% 0 0
   text-align: center
