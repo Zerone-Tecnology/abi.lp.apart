@@ -1392,6 +1392,10 @@ ul {
   margin: 35px 0;
 }
 
+.mm-wrap {
+  display: none;
+}
+
 @media only screen and (max-width: 1200px) {
   .header_top-wrap .phone-wrap li.first {
     font-size: 14px;
