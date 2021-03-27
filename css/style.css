@@ -1512,6 +1512,19 @@ ul {
   .footer .block-wrap .block-center .nav li {
     padding-left: 0;
   }
+  .galleryPopup {
+    width: 100%;
+  }
+  .galleryPopup .info-wrap {
+    position: relative;
+    width: 100%;
+    padding: 15px;
+    left: 0;
+    top: 0;
+  }
+  .galleryPopup .info-wrap p {
+    margin: 10px 0 0;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -1543,7 +1556,7 @@ ul {
     width: 100%;
   }
   .block_wrap.s10 .block {
-    margin: 25px 0;
+    margin: 15px 0;
   }
   .block_wrap.s12 .map-wrap {
     margin-bottom: 35px;

@@ -79,11 +79,6 @@ $(document).ready(function () {
     navText: '',
     items: 1
   });
-  $('.slider-wrap').owlCarousel({
-    nav: true,
-    navText: '',
-    items: 1
-  });
   $('.popup').magnificPopup({
     type: 'inline',
     removalDelay: 300,
@@ -148,5 +143,14 @@ $(document).ready(function () {
 
   if (window.matchMedia('(max-width: 540px)').matches) {
     $('.slider-wrap').addClass('owl-carousel');
+    $('.slider-wrap').owlCarousel({
+      nav: true,
+      navText: '',
+      items: 1
+    });
   }
+
+  $('#mmenu-popup .menu a').on('click', function () {
+    $.magnificPopup.close();
+  });
 });
