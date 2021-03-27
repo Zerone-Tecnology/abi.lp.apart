@@ -889,6 +889,57 @@ ul
     margin: 35px 0
 .mm-wrap
   display: none
+  padding: 15px
+  transition: all .5s ease
+  span
+    width: 30px
+    height: 2px
+    background-color: $accent2
+    position: relative
+    display: inline-block
+    margin: 8px 0
+    &::before, &::after
+      content: ''
+      position: absolute
+      height: 2px
+      background-color: $accent2
+      width: 30px
+      bottom: -8px
+      left: 0
+    &::before
+      bottom: 0
+      top: -8px
+  &.fix
+    position: fixed
+    background-color: #fff
+    z-index: 9
+    right: 15px
+#mmenu-popup
+  .menu 
+    margin-bottom: 25px
+    li
+      padding: 5px 0
+  .phone
+    li
+      position: relative
+      display: block
+      padding: 0 25px
+      margin: 15px 0
+      &::after, &::before
+        content: ''
+        width: 25px
+        height: 25px
+        position: absolute
+        top: 0
+        background-repeat: no-repeat
+        background-image: url('../img/sprite_main.svg')
+      &::after
+        opacity: 0  
+      &::before
+        left: 0
+        background-position: -50px 0
+      &:nth-child(2)::before
+        background-position: -50px -25px
 
 @media only screen and (max-width : 1200px)
   .header_top-wrap 
@@ -899,14 +950,19 @@ ul
   .btn
     padding: 15px 20px
 
-@media only screen and (max-width : 768px)
-  .menu
+@media only screen and (max-width : 992px)
+  .menu-wrap .menu
     display: none
   .mm-wrap
     display: block
   .block_wrap.s17 .block-wrap .block
     img
       width: 90%
+  .block_wrap.s8 .content-wrap
+    margin-bottom: 35px
+  .block_wrap.s9 .block-wrap 
+    .block-1, .block-4, .block-top
+      width: 100%
   .footer .block-wrap 
     .block-left
       width: 45%
@@ -920,3 +976,66 @@ ul
       font-size: 14px
       .nav li
         padding-left: 0
+
+@media only screen and (max-width : 768px)
+  .form-kta input[type="text"], 
+  .form-kta .checkbox-wrap, 
+  .form-kta .btn
+    width: 100%
+  .header_top-wrap .phone-wrap li a
+    padding: 5px
+  .menu-wrap
+    text-align: right
+  .block_wrap.s1 
+    top: 0
+    margin-bottom: 15px
+    .block_s1_wrap
+      top: 0
+      position: relative
+  .block_wrap.s2
+    padding-top: 15px
+  .block_wrap.s6 .block.b-1,
+  .block_wrap.s6 .block.b-3,
+  .block_wrap.s9 .block-wrap .block-bottom
+    width: 100%
+  .block_wrap.s10 .block
+    margin: 25px 0
+  .owl-carousel .owl-nav 
+    button.owl-next
+      right: 0
+    button.owl-prev
+      left: 0
+
+@media only screen and (max-width : 540px)
+  .block_wrap.s9 .block-wrap .block-5 
+    .left, .right
+      width: 100%
+    .right
+      text-align: center
+      margin-top: 25px
+  .footer 
+    .block-wrap 
+      .block-left,
+      .block-right
+        width: 100%
+        position: relative
+        text-align: center
+      .block-left 
+        .lic
+          padding-left: 0
+          padding-top: 55px
+          &::before
+            left: 0
+            right: 0
+            margin: 0 auto
+            top: 0
+      .block-right
+        padding-left: 45px
+        margin-bottom: 35px
+        .phone::before
+          margin-left: -35px
+          left: auto
+      .block-center .nav
+        display: none
+    .zerone
+      bottom: 0

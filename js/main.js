@@ -45,10 +45,10 @@ $(document).ready(function(){
 				nav:true,
 				navText: '',
 		responsive: {
-			320: {
+			425: {
 				items: 1,
 			},
-			425: {
+			768: {
 				items: 2,
 			},
 			1024: {
@@ -57,18 +57,18 @@ $(document).ready(function(){
 		}
 	});
 
-		$('.owl-cert').owlCarousel({
+	$('.owl-cert').owlCarousel({
 				nav:true,
 				navText: '',
 		responsive: {
-			320: {
+			425: {
+				items: 1,
+			},
+			768: {
 				items: 2,
 			},
-			425: {
-				items: 3,
-			},
 			1024: {
-				items: 4
+				items: 3
 			}
 		}
 	});
@@ -85,7 +85,7 @@ $(document).ready(function(){
 		mainClass: 'my-mfp-zoom-in'
 	});
 
-		$('.image-popup-vertical-fit').magnificPopup({
+	$('.image-popup-vertical-fit').magnificPopup({
 		type: 'image',
 		closeOnContentClick: true,
 		mainClass: 'mfp-img-mobile',
@@ -129,4 +129,16 @@ $(document).ready(function(){
 		});
 		return false;
 	});
+
+	window.onscroll = function() {fixMMenu()};
+	var header = document.getElementById("headerTop");
+	var menu = document.getElementById("mmWrap");
+	var sticky = header.offsetTop;
+	function fixMMenu() {
+		if (window.pageYOffset > sticky) {
+			menu.classList.add("fix");
+		} else {
+			menu.classList.remove("fix");
+		}
+	}
 });
