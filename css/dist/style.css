@@ -1279,6 +1279,61 @@ ul {
     padding: 25px;
   }
 
+  .block_wrap.s2 {
+    padding: 25px 0;
+  }
+  .block_wrap.s2 .content-wrap {
+    padding: 25px 0;
+  }
+  .block_wrap.s2 .btn-arr {
+    display: block;
+    margin-top: 25px;
+    padding-left: 0;
+  }
+
+  .block_wrap.s4 .tabs_wrap .tab {
+    margin-bottom: 15px;
+    padding: 15px;
+  }
+  .block_wrap.s4 .tabs_wrap .panels {
+    padding: 0;
+  }
+
+  .block_wrap.s5 .sale-wrap .b-hour {
+    padding: 15px 0;
+    margin-left: 2px;
+  }
+  .block_wrap.s5 .sale-wrap .b-hour b {
+    font-size: 22px;
+  }
+  .block_wrap.s5 .content-wrap {
+    padding: 15px;
+  }
+
+  .block_wrap.s6 .block.portfolio-1 {
+    height: 245px;
+  }
+
+  .block_wrap.s6 .block.b-2 {
+    width: 100%;
+  }
+
+  .block_wrap.s8 .content-wrap .data-wrap .radio + label {
+    width: 100%;
+    padding: 15px 5px;
+    font-size: 14px;
+  }
+  .block_wrap.s8 .content-wrap .data-wrap .data {
+    width: 48%;
+  }
+  .block_wrap.s8 .content-wrap .data-wrap .data-title {
+    margin-top: 35px;
+  }
+  .block_wrap.s8 .content-wrap .data-wrap .data-summ {
+    margin-left: 5px;
+    padding: 15px;
+  }
+
   .block_wrap.s9 .block-wrap .block-5 .left, .block_wrap.s9 .block-wrap .block-5 .right {
     width: 100%;
   }

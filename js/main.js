@@ -75,13 +75,19 @@ $(document).ready(function(){
 		}
 	});
 
-		$('.gallery').owlCarousel({
-				nav:true,
-				navText: '',
-				items:1
+	$('.gallery').owlCarousel({
+		nav:true,
+		navText: '',
+		items:1
+	});
+	
+	$('.slider-wrap').owlCarousel({
+		nav:true,
+		navText: '',
+		items:1
 	});
 
-		$('.popup').magnificPopup({
+	$('.popup').magnificPopup({
 		type: 'inline',
 		removalDelay: 300,
 		mainClass: 'my-mfp-zoom-in'
@@ -95,7 +101,7 @@ $(document).ready(function(){
 			verticalFit: true
 		}
 		
-		});
+	});
 
 		// $('.form-kta').submit(function(){
 		//     $.magnificPopup.open({
@@ -142,5 +148,9 @@ $(document).ready(function(){
 		} else {
 			menu.classList.remove("fix");
 		}
+	}
+
+	if(window.matchMedia('(max-width: 540px)').matches){
+		$('.slider-wrap').addClass('owl-carousel');
 	}
 });
