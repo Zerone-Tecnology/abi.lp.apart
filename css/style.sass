@@ -1019,11 +1019,6 @@ ul
     .block .content-wrap
       opacity: 1
       background-color: #ffffffa3
-    .owl-carousel .owl-nav
-      top: 0%
-      button.owl-prev,
-      button.owl-next
-        height: 30px
   .block_wrap.s6 .block.b-1,
   .block_wrap.s6 .block.b-3,
   .block_wrap.s9 .block-wrap 
@@ -1038,7 +1033,11 @@ ul
   .block_wrap.s15 .block-wrap .block,
   .block_wrap.s16 .block-wrap .block
     filter: grayscale(0)
-  .owl-carousel .owl-nav 
+  .owl-carousel .owl-nav
+    top: 0%
+    button.owl-prev,
+    button.owl-next
+      height: 30px
     button.owl-next
       right: 0
     button.owl-prev
@@ -1081,7 +1080,9 @@ ul
       padding: 15px
   .block_wrap.s6 .block.portfolio-1
     height: 245px
-  .block_wrap.s6 .block.b-2
+  .block_wrap.s6 
+    .block.b-2,
+    .block.b-3
     width: 100%
   .block_wrap.s8 .content-wrap .data-wrap 
     .radio + label
