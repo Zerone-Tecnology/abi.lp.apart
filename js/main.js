@@ -156,6 +156,9 @@ $(document).ready(function(){
 	}
 	$('#mmenu-popup .menu a').on('click', function(){
 		$.magnificPopup.close();
-	})
+	});
+
+	const observer = lozad(); // lazy loads elements with default selector as '.lozad'
+	observer.observe();
 
 });
