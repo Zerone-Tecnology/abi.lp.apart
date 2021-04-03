@@ -992,8 +992,24 @@ ul
   .form-kta .checkbox-wrap, 
   .form-kta .btn
     width: 100%
-  .header_top-wrap .phone-wrap li a
-    padding: 5px
+  .header_top-wrap .phone-wrap 
+    li 
+      padding-left: 0
+      a
+        padding: 5px
+      &.first::after
+        content: none
+      &::before
+        transform: scale(.7)
+      ul
+        display: block
+        position: relative
+        width: 100%
+        padding: 0
+        li
+          padding-left: 25px
+    .phone
+      padding: 0    
   .menu-wrap
     text-align: right
   .block_wrap.s1 
@@ -1004,15 +1020,34 @@ ul
       position: relative
   .block_wrap.s2
     padding-top: 15px
+  .block_wrap.s2 .content-wrap p,
+  .block_wrap.s5 .content-wrap
+    text-align: justify
+  .block_wrap.s6 
+    .block.b-1
+      width: 100%
+    .block .content-wrap
+      opacity: 1
+      background-color: #ffffffa3
   .block_wrap.s6 .block.b-1,
   .block_wrap.s6 .block.b-3,
-  .block_wrap.s9 .block-wrap .block-bottom
-    width: 100%
+  .block_wrap.s9 .block-wrap 
+    .block-bottom
+      width: 100%
+    .block::before
+      content: none
   .block_wrap.s10 .block
     margin: 15px 0
   .block_wrap.s12 .map-wrap
     margin-bottom: 35px
-  .owl-carousel .owl-nav 
+  .block_wrap.s15 .block-wrap .block,
+  .block_wrap.s16 .block-wrap .block
+    filter: grayscale(0)
+  .owl-carousel .owl-nav
+    top: 0%
+    button.owl-prev,
+    button.owl-next
+      height: 30px
     button.owl-next
       right: 0
     button.owl-prev
@@ -1055,7 +1090,9 @@ ul
       padding: 15px
   .block_wrap.s6 .block.portfolio-1
     height: 245px
-  .block_wrap.s6 .block.b-2
+  .block_wrap.s6 
+    .block.b-2,
+    .block.b-3
     width: 100%
   .block_wrap.s8 .content-wrap .data-wrap 
     .radio + label
