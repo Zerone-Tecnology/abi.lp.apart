@@ -811,6 +811,7 @@ ul
   text-align: center
   padding: 65px 25px
 .galleryPopup
+  max-height: 90vh
   width: 70%
   .info-wrap
     position: absolute
@@ -843,6 +844,13 @@ ul
         padding: 0 0 0 50px
         .icon
           background-position: -104px -118px
+  .owl-carousel 
+    .owl-item img
+      height: 100%
+    .owl-nav 
+      button.owl-next,
+      button.owl-prev
+        box-shadow: none
 .error-page
   margin: 15% 0 0
   text-align: center
@@ -901,7 +909,10 @@ ul
         background-position: -50px 0
       &:nth-child(2)::before
         background-position: -50px -25px
-
+#video
+  padding: 5px
+  width: 570px
+  
 @media only screen and (max-width : 1200px)
   .header_top-wrap 
     .phone-wrap li.first

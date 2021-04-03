@@ -8,7 +8,7 @@
   <link rel="preconnect" type="text/css" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/libs.css" />
-  <link rel="stylesheet" type="text/css" href="css/style.css?v=1.5"  media="none" onload="if(media!='all')media='all'">
+  <link rel="stylesheet" type="text/css" href="css/style.css?v=1.6"  media="none" onload="if(media!='all')media='all'">
 </head>
 <body>
   <div class="header_top-wrap" id="headerTop">
@@ -392,25 +392,25 @@
           <div class="slider-wrap">
             <div class="block b-1 portfolio-1 lozad" data-background-image="img/portfolio/1.jpg">
               <div class="content-wrap">
-                <a href="#" class="btn btn-play"></a>
+                <a href="#video" class="btn btn-play popup"></a>
               </div>
             </div>
-            <div class="block b-2 portfolio-2 lozad" data-background-image="img/portfolio/2.jpg">
+            <div class="block b-2 portfolio-2 lozad" data-background-image="img/portfolio/1/remont-1-1.jpg">
               <div class="content-wrap">
                 <div class="user user-customer"><div class="icon"></div>Частный клиент</div>
-                <p><a href="#galleryPopup-c-1" class="popup">Эксклюзивный дизайнерский ремонт 3-х комнатной квартиры</a></p>
+                <p><a href="#galleryPopup-c-1" class="popup">Капитальный ремонт. ЖК Dostyk residence</a></p>
               </div>
             </div>
-            <div class="block b-2 portfolio-3 lozad" data-background-image="img/portfolio/3.jpg">
+            <div class="block b-2 portfolio-3 lozad" data-background-image="img/portfolio/2/remont-2-2.jpg">
               <div class="content-wrap">
                 <div class="user user-customer"><div class="icon"></div>Частный клиент</div>
-                <p><a href="#galleryPopup-c-2" class="popup">Эксклюзивный дизайнерский ремонт 3-х комнатной квартиры</a></p>
+                <p><a href="#galleryPopup-c-2" class="popup">Косметический ремонт 2 комнатной квартиры, квадратурой 62 м2</a></p>
               </div>
             </div>
-            <div class="block b-2 portfolio-4 lozad" data-background-image="img/portfolio/4.jpg">
+            <div class="block b-2 portfolio-4 lozad" data-background-image="img/portfolio/3/remont-3-1.jpg">
               <div class="content-wrap">
                 <div class="user user-customer"><div class="icon"></div>Частный клиент</div>
-                <p><a href="#galleryPopup-c-3" class="popup">Эксклюзивный дизайнерский ремонт 3-х комнатной квартиры</a></p>
+                <p><a href="#galleryPopup-c-3" class="popup">Дизайнерский ремонт 3 комнатной квартиры</a></p>
               </div>
             </div>
             <div class="block b-2 portfolio-5 lozad" data-background-image="img/portfolio/7.jpg">
@@ -484,19 +484,19 @@
               <div class="data-wrap">
                 <div class="data-title">Тип ремонта </div>
                 <div class="data">
-                  <input type="radio" class="radio" name="data-2" id="type-3" checked>
+                  <input type="radio" class="radio" name="apartType" id="type-3" value="25000" checked>
                   <label for="type-3">Косметический</label>
                 </div>
                 <div class="data">
-                  <input type="radio" class="radio" name="data-2" id="type-4">
+                  <input type="radio" class="radio" name="apartType" id="type-4" value="30000">
                   <label for="type-4">Капитальный</label>
                 </div>
                 <div class="data">
-                  <input type="radio" class="radio" name="data-2" id="type-5">
+                  <input type="radio" class="radio" name="apartType" id="type-5" value="38000">
                   <label for="type-5">Эксклюзивный</label>
                 </div>
                 <div class="data">
-                  <input type="radio" class="radio" name="data-2" id="type-6">
+                  <input type="radio" class="radio" name="apartType" id="type-6" value="5000">
                   <label for="type-6">Дизайн проект</label>
                 </div>
               </div>
@@ -511,7 +511,8 @@
               </div>
               <div class="data-wrap">
                 <a href="#callback" class="btn btn-orange popup">Рассчитать</a>
-                <div class="data-summ" id="data-summ"><span>2 419 000</span> тг</div>
+                <div class="data-summ" id="data-summ"><span>0</span> тг</div>
+                <p>Предварительный расчет</p>
               </div>
             </form>
           </div>
@@ -708,7 +709,7 @@
         </div>
         <div class="col-12 col-md-6 col-lg-5 order-md-last">
           <div class="map-wrap">
-            <iframe class="lozad" data-src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad5f0177db46c6ca7f9a2a9ee6025a584bb2054ab5befcbc39a074d4916869e7e&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
+            <iframe class="lozad" data-src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad5f0177db46c6ca7f9a2a9ee6025a584bb2054ab5befcbc39a074d4916869e7e&amp;source=constructor" width="100%" height="300" frameborder="0"></iframe>
           </div>
         </div>
       </div>
@@ -881,25 +882,67 @@
         <p>Наш менеджер уже пляшет от радости по этому поводу. Сейчас он успокоится и обязательно вам перезвонит.</p>
       </div>
     </div>
-  </div>
 
-  <div class="mfp-hide">
+    <div id="video" class="form-popup">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/g9sKQzSToPg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    
+    <!-- портфолио клиент 1 -->
     <div id="galleryPopup-c-1" class="galleryPopup form-popup">
-        <div class="info-wrap">
-          <div class="user user-customer"><div class="icon"></div>Частный клиент</div>
-          <p>Ресторан «La barca fish & wine»</p>
-          <p>Строительно-монтажные и отделочные работы помещения</p>
-          <p>Общая площадь: 200 м.кв</p>
-          <p>Мы справились за 2 месяца</p>
-        </div>
         <div class="gallery owl-carousel">
-          <img class="lozad" data-src="img/portfolio/1.jpg" alt="1">
-          <img class="lozad" data-src="img/portfolio/2.jpg" alt="2">
-          <img class="lozad" data-src="img/portfolio/3.jpg" alt="3">
-          <img class="lozad" data-src="img/portfolio/4.jpg" alt="4">
-          <img class="lozad" data-src="img/portfolio/5.jpg" alt="5">
+          <div class="info-wrap">
+            <div class="user user-customer"><div class="icon"></div>Частный клиент</div>
+            <p>Капитальный ремонт 2 комнатной квартиры, квадратурой 100 м2. </p>
+            <p>Продолжительность ремонта 3 месяца. </p>
+            <p>Предложение клиента, использовать светлые оттенки в гостинной, кухне, в спальне.</p>
+          </div>
+          <img class="lozad" data-src="img/portfolio/1/remont-1-1.jpg" alt="Капитальный ремонт">
+          <img class="lozad" data-src="img/portfolio/1/remont-1-2.jpg" alt="Капитальный ремонт">
+          <img class="lozad" data-src="img/portfolio/1/remont-1-3.jpg" alt="Капитальный ремонт">
+          <img class="lozad" data-src="img/portfolio/1/remont-1-4.jpg" alt="Капитальный ремонт">
+          <img class="lozad" data-src="img/portfolio/1/remont-1-5.jpg" alt="Капитальный ремонт">
+          <img class="lozad" data-src="img/portfolio/1/remont-1-6.jpg" alt="Капитальный ремонт">
+          <img class="lozad" data-src="img/portfolio/1/remont-1-7.jpg" alt="Капитальный ремонт">
+          <img class="lozad" data-src="img/portfolio/1/remont-1-8.jpg" alt="Капитальный ремонт">
+          <img class="lozad" data-src="img/portfolio/1/remont-1-9.jpg" alt="Капитальный ремонт">
         </div>
     </div>
+    <!-- портфолио клиент 2 -->
+    <div id="galleryPopup-c-2" class="galleryPopup form-popup">
+      <div class="gallery owl-carousel">
+        <div class="info-wrap">
+          <div class="user user-customer"><div class="icon"></div>Частный клиент</div>
+          <p>Косметический ремонт 2 комнатной квартиры, квадратурой 62 м2.</p>
+          <p>Продолжительность ремонта 2 месяца. </p>
+          <p>Предложение клиента, ремонт в светлой тонах, в детскойскомнате наклеить обои с познавательным изображением.</p>
+        </div>
+        <img class="lozad" data-src="img/portfolio/2/remont-2-1.jpg" alt="Косметический ремонт">
+        <img class="lozad" data-src="img/portfolio/2/remont-2-2.jpg" alt="Косметический ремонт">
+        <img class="lozad" data-src="img/portfolio/2/remont-2-3.jpg" alt="Косметический ремонт">
+        <img class="lozad" data-src="img/portfolio/2/remont-2-4.jpg" alt="Косметический ремонт">
+        <img class="lozad" data-src="img/portfolio/2/remont-2-5.jpg" alt="Косметический ремонт">
+        <img class="lozad" data-src="img/portfolio/2/remont-2-6.jpg" alt="Косметический ремонт">
+        <img class="lozad" data-src="img/portfolio/2/remont-2-7.jpg" alt="Косметический ремонт">
+      </div>
+  </div>
+  <!-- портфолио клиент 3 -->
+  <div id="galleryPopup-c-3" class="galleryPopup form-popup">
+    <div class="gallery owl-carousel">
+      <div class="info-wrap">
+          <div class="user user-customer"><div class="icon"></div>Частный клиент</div>
+          <p>Дизайнерский ремонт 3 комнатной квартиры. </p>
+          <p>Площадь 120 кв/метр, продолжительность работы 4 месяца.</p>
+          <p>По желанию клиента выполнен ремонт скандинавском стиле.</p>
+        </div>
+        <img class="lozad" data-src="img/portfolio/3/remont-3-1.jpg" alt="Дизайнерский ремонт">
+        <img class="lozad" data-src="img/portfolio/3/remont-3-2.jpg" alt="Дизайнерский ремонт">
+        <img class="lozad" data-src="img/portfolio/3/remont-3-3.jpg" alt="Дизайнерский ремонт">
+        <img class="lozad" data-src="img/portfolio/3/remont-3-4.jpg" alt="Дизайнерский ремонт">
+        <img class="lozad" data-src="img/portfolio/3/remont-3-5.jpg" alt="Дизайнерский ремонт">
+      </div>
+  </div>
+
+
     <div id="galleryPopup-b-1" class="galleryPopup form-popup">
       <div class="info-wrap">
         <div class="user user-business"><div class="icon"></div>Корпоративный клиент</div>

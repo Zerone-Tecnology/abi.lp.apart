@@ -1265,6 +1265,7 @@ ul {
 }
 
 .galleryPopup {
+  max-height: 90vh;
   width: 70%;
 }
 
@@ -1311,6 +1312,16 @@ ul {
 
 .galleryPopup .info-wrap .user-business .icon {
   background-position: -104px -118px;
+}
+
+.galleryPopup .owl-carousel .owl-item img {
+  height: 100%;
+}
+
+.galleryPopup .owl-carousel .owl-nav button.owl-next,
+.galleryPopup .owl-carousel .owl-nav button.owl-prev {
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .error-page {
@@ -1396,6 +1407,11 @@ ul {
 
 #mmenu-popup .phone li:nth-child(2)::before {
   background-position: -50px -25px;
+}
+
+#video {
+  padding: 5px;
+  width: 570px;
 }
 
 @media only screen and (max-width: 1200px) {

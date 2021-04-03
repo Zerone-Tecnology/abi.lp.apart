@@ -1,6 +1,10 @@
 $(document).ready(function(){
 		new WOW().init();
 
+		// получить тип ремонта
+		var apartType = document.querySelector('input[name="apartType"]:checked').value;
+		document.getElementById("data-summ").getElementsByTagName('span')[0].innerHTML = 50*apartType;
+
 		var slider = document.getElementById("myRange");
 		var output = document.getElementById("demo");
 		output.innerHTML = slider.value; // Display the default slider value
@@ -38,7 +42,10 @@ $(document).ready(function(){
 				}
 				this.parentNode.getElementsByTagName('style')[0].innerHTML += "#" + this.parentNode.id + " input[type=range]::-webkit-slider-runnable-track {background:linear-gradient(to right, #56463E 0%, #56463E " + aa + "%, #ccc " + aa + "%)} #" + this.parentNode.id + ":hover input[type=range]:after{left: " + p + "px}";
 				document.getElementById("demo").innerHTML = a;
-				document.getElementById("data-summ").getElementsByTagName('span')[0].innerHTML = a*2200;
+				
+				// получить тип ремонта
+				var apartType = document.querySelector('input[name="apartType"]:checked').value;
+				document.getElementById("data-summ").getElementsByTagName('span')[0].innerHTML = a*apartType;
 		})
 
 		$('.review-wrap').owlCarousel({
