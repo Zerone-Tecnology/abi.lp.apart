@@ -997,6 +997,10 @@ ul {
   padding: 45px;
 }
 
+.block_wrap.s13 .review-wrap .block a {
+  color: #EE3E18;
+}
+
 .block_wrap.s13 .review-wrap .block .img-wrap {
   width: 100px;
   margin: 0 auto;
@@ -1211,6 +1215,12 @@ ul {
 .form-popup .btn {
   width: 100%;
   margin: 25px 0 0;
+}
+
+div[id^="reviewUser"] .img-wrap {
+  width: 100px;
+  float: left;
+  margin-right: 15px;
 }
 
 .owl-carousel .owl-nav {
