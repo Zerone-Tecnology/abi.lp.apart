@@ -1182,6 +1182,22 @@ ul {
   background-position: -135px 0;
 }
 
+.footer .block-wrap .block-right .whatsapp {
+  position: relative;
+}
+
+.footer .block-wrap .block-right .whatsapp::before {
+  content: '';
+  position: absolute;
+  left: -30px;
+  top: 0;
+  background-image: url("../img/sprite_main.svg");
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 25px;
+  background-position: -135px -25px;
+}
+
 .footer .zerone {
   position: absolute;
   bottom: 0;
@@ -1389,14 +1405,14 @@ div[id^="reviewUser"] .img-wrap {
   padding: 5px 0;
 }
 
-#mmenu-popup .phone li {
+#mmenu-popup .phones li {
   position: relative;
   display: block;
   padding: 0 25px;
   margin: 15px 0;
 }
 
-#mmenu-popup .phone li::after, #mmenu-popup .phone li::before {
+#mmenu-popup .phones li::after, #mmenu-popup .phones li::before {
   content: '';
   width: 25px;
   height: 25px;
@@ -1406,16 +1422,17 @@ div[id^="reviewUser"] .img-wrap {
   background-image: url("../img/sprite_main.svg");
 }
 
-#mmenu-popup .phone li::after {
+#mmenu-popup .phones li::after {
   opacity: 0;
 }
 
-#mmenu-popup .phone li::before {
+#mmenu-popup .phones li.phone::before {
   left: 0;
   background-position: -50px 0;
 }
 
-#mmenu-popup .phone li:nth-child(2)::before {
+#mmenu-popup .phones li.whatsapp::before {
+  left: 0;
   background-position: -50px -25px;
 }
 

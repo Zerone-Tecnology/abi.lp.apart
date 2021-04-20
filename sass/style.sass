@@ -751,6 +751,18 @@ ul
             width: 20px
             height: 25px
             background-position: -135px 0
+        .whatsapp
+          position: relative
+          &::before
+            content: ''
+            position: absolute
+            left: -30px
+            top: 0
+            background-image: url('../img/sprite_main.svg')
+            background-repeat: no-repeat
+            width: 20px
+            height: 25px
+            background-position: -135px -25px
   .zerone
     position: absolute
     bottom: 0
@@ -895,7 +907,7 @@ div[id^="reviewUser"]
     margin-bottom: 25px
     li
       padding: 5px 0
-  .phone
+  .phones
     li
       position: relative
       display: block
@@ -911,10 +923,11 @@ div[id^="reviewUser"]
         background-image: url('../img/sprite_main.svg')
       &::after
         opacity: 0  
-      &::before
+      &.phone::before
         left: 0
         background-position: -50px 0
-      &:nth-child(2)::before
+      &.whatsapp::before
+        left: 0
         background-position: -50px -25px
 #video
   padding: 5px
