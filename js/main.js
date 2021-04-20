@@ -104,15 +104,7 @@ $(document).ready(function(){
 		
 	});
 
-		// $('.form-kta').submit(function(){
-		//     $.magnificPopup.open({
-		//     items: {
-		//         src: '#thanksPopup'
-		//     },
-		//     type: 'inline'
-		//     });
-		//     return false;
-		// });
+	$(".formPhone").mask("+7 (999) 999-9999");
 		
 		//E-mail Ajax Send
 	$("#form-kta").submit(function() {

@@ -96,16 +96,8 @@ $(document).ready(function () {
     image: {
       verticalFit: true
     }
-  }); // $('.form-kta').submit(function(){
-  //     $.magnificPopup.open({
-  //     items: {
-  //         src: '#thanksPopup'
-  //     },
-  //     type: 'inline'
-  //     });
-  //     return false;
-  // });
-  //E-mail Ajax Send
+  });
+  $(".formPhone").mask("+7 (999) 999-9999"); //E-mail Ajax Send
 
   $("#form-kta").submit(function () {
     var th = $(this);
